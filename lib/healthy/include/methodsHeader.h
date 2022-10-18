@@ -6,8 +6,8 @@ using namespace std;
 class User
 {
 public:
-	User() {}
-	~User() {}
+	User() = default;
+	~User() = default;
 
 protected:
 	string name;

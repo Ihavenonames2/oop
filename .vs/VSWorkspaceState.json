@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\lib",
+    "\\lib\\healthy",
+    "\\lib\\healthy\\include",
+    "\\lib\\healthy\\source",
+    "\\lib\\main",
+    "\\lib\\main\\source"
+  ],
+  "SelectedNode": "\\lib\\main\\source\\main.cpp",
+  "PreviewInSolutionExplorer": false
+}

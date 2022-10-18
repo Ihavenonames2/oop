@@ -1,0 +1,7 @@
+# ninja log v5
+1	346	6878372648972105	lib/healthy/CMakeFiles/healthy.dir/source/methods.cpp.obj	d5fd3c7b7b01367
+350	670	6878372651166239	lib/healthy/healthy.lib	950b5e2f3425bb84
+11	2212	6878372667658503	lib/main/CMakeFiles/healthyLib.dir/source/main.cpp.obj	97522e370cb23262
+2212	2859	6878372673109897	lib/main/healthyLib.exe	44c385fecff9b04c
+0	1024	6878374540362169	lib/main/CMakeFiles/healthyLib.dir/source/main.cpp.obj	97522e370cb23262
+1025	1643	6878374545378759	lib/main/healthyLib.exe	44c385fecff9b04c
