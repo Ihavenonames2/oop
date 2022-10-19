@@ -6,54 +6,76 @@ using namespace std;
 class User
 {
 public:
-	User() = default;
-	~User() = default;
+	User();
+	User(string name, int age, int height, int weight);
+	//~User();
 
 protected:
 	string name;
-	int high;
+	int height;
 	int weight;
 	int age;
+
+public:
+	void Show_user_stat();
 };
+
+
 class Exersices
 {
 public:
 	Exersices();
-	~Exersices();
-
-private:
+	//~Exersices();
 
 protected:
-	float weight;
-	float calories;
+	int burned_calories;
+	//float Lose_calories( int average_b_cal);
+
 };
 
 class Legs : public Exersices
 {
 public:
-	float Running();
+	Legs();
+	//~Legs();
+private:
+	int ab_run;
+	int ab_squat;
+	int ab_jump;
 
-	float Squats();
+public:
+	int Running(int run_time);
 
-	float Jumps();
+	int Squats(int time);
 
+	int Jumps(int times);
 };
 
 class Arms : public Exersices
 {
 public:
-	float Push_ups();
+	Arms();
+	//~Arms();
+private:
+	int ab_pups;
+	int ab_plups;
+	int ab_ex;
+public:
+	int Push_ups(int time);
 
-	float Pull_ups();
+	int Pull_ups(int time);
 
-	float Dumbbell_exercises();
+	int Dumbbell_exercises(int times);
 
 };
 
 class Chest : public Exersices
 {
 public:
-	float Twisting();
-
+	Chest();
+private:
+	int ab_twist;
+public:
+	int Twisting(int times);
 
 };
