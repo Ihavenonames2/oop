@@ -135,22 +135,22 @@ int Food::get_carbohydrates() { return carbohydrates; }
 int Food::get_fats() { return fats; }
 int Food::get_proteins() { return proteins; }
 int Food::get_weight() { return weight_f; }
-string Food::get_name() { return "Назва продукту :" + name_of_product; }
+string Food::get_name() { return "Name of product :" + name_of_product; }
 void Food::set() {
 	weight_f = rand() % 100 + 1;
 	calories_f = rand() % 2500 + 1;
 	fats = rand() % 50 + 1;
 	carbohydrates = rand() % 70 + 1;
 	proteins = rand() % 60 + 1;
-	string arr_for_name[] = { "Pizza","Hot dog","Salats","Water","Bread" };
+	string arr_for_name[] = { "Pizza","Hot dog","Salats","Water","Bread" }; //макс поменяй!!!!!!!!!!!!!!!!!!!
 	name_of_product = arr_for_name[rand() % 5];
 }
 void Diares::print_data() {
-	cout << "Вага :" << weight_f << endl;
-	cout << "Калорій на" << weight_f << "гр =" << calories_f << endl;
-	cout << "Жирів на " << weight_f << "гр =" << fats << endl;
-	cout << "Вуглеводів на  " << weight_f << "гр =" << carbohydrates << endl;
-	cout << "Білків на " << weight_f << "гр =" << proteins << endl;
+	cout << "Weight :" << weight_f << endl;
+	cout << "Calories for" << weight_f << "gr =" << calories_f << endl;
+	cout << "Fats " << weight_f << "gr =" << fats << endl;
+	cout << "carbohydrates for  " << weight_f << "gr =" << carbohydrates << endl;
+	cout << "proteins for " << weight_f << "gr =" << proteins << endl;
 }
 void Diares::weight_gain() {
 
@@ -167,7 +167,7 @@ void Diares::weight_support()
 }
 void Diares::menu_for_choose()
 {
-	cout << "Для того щоб підтримувати себе в тонусі натисніть-1" << endl;
-	cout << "Для того щоб набрати масу натисність-2" << endl;
-	cout << "Для того щоб скинути вагу натисність-3" << endl;
+	cout << "In order to boost yourself in tone, press-1" << endl;
+	cout << "In order to gain a lot of weight-2" << endl;
+	cout << "In order to lost a lot of weight-3" << endl;
 }
