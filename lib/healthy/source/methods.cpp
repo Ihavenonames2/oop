@@ -103,3 +103,71 @@ int Chest::Twisting(int time)
 	burned_calories = time * ab_twist;
 	return burned_calories;
 }
+Diares::Diares()
+{
+	breakfast = 0;
+	dinner = 0;
+	evening_meal = 0;
+	arr = new Food[capacity];
+	capacity = 1;
+	currentsize = 0;
+
+}
+Food::Food() {
+	weight_f = 0;
+	calories_f = 0;
+	name_of_product = " ";
+	fats = 0;
+	carbohydrates = 0;
+	proteins = 0;
+
+}
+Food::Food(int weight_f, int calories_f, int fats, string name_of_product, int carbohydrates, int proteins) {
+	this->weight_f = weight_f;
+	this->calories_f = calories_f;
+	this->fats = fats;
+	this->name_of_product = name_of_product;
+	this->carbohydrates = carbohydrates;
+	this->proteins = proteins;
+}
+int Food::get_calories() { return calories_f; }
+int Food::get_carbohydrates() { return carbohydrates; }
+int Food::get_fats() { return fats; }
+int Food::get_proteins() { return proteins; }
+int Food::get_weight() { return weight_f; }
+string Food::get_name() { return "Назва продукту :" + name_of_product; }
+void Food::set() {
+	weight_f = rand() % 100 + 1;
+	calories_f = rand() % 2500 + 1;
+	fats = rand() % 50 + 1;
+	carbohydrates = rand() % 70 + 1;
+	proteins = rand() % 60 + 1;
+	string arr_for_name[] = { "Pizza","Hot dog","Salats","Water","Bread" };
+	name_of_product = arr_for_name[rand() % 5];
+}
+void Diares::print_data() {
+	cout << "Вага :" << weight_f << endl;
+	cout << "Калорій на" << weight_f << "гр =" << calories_f << endl;
+	cout << "Жирів на " << weight_f << "гр =" << fats << endl;
+	cout << "Вуглеводів на  " << weight_f << "гр =" << carbohydrates << endl;
+	cout << "Білків на " << weight_f << "гр =" << proteins << endl;
+}
+void Diares::weight_gain() {
+
+
+
+}
+void Diares::weight_lose()
+{
+
+}
+void Diares::weight_support()
+{
+
+}
+void Diares::menu_for_choose()
+{
+	cout << "Для того щоб підтримувати себе в тонусі натисніть-1" << endl;
+	cout << "Для того щоб набрати масу натисність-2" << endl;
+	cout << "Для того щоб скинути вагу натисність-3" << endl;
+}
